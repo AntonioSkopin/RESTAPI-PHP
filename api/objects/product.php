@@ -15,7 +15,7 @@
 
         // Constructor with $db as database connection
         public function __construct($db) {
-            this->conn = $db;
+            $this->conn = $db;
         }
 
         // Read the products
