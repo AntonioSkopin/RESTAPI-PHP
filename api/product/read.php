@@ -46,4 +46,10 @@
 
         // Show products data in json format
         echo json_encode($products_arr);
+    } else {
+        // Set response code to 404 (Not found)
+        http_response_code(404);
+
+        // Tell the user no products were found
+        echo json_encode(array("message" => "No products found."));
     }
