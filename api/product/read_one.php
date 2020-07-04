@@ -40,3 +40,10 @@
         // Make it json format
         echo json_encode($product_arr);
     }
+    else {
+        // Set response code to 404 (Not Found)
+        http_response_code(404);
+
+        // Output to the user that it doesn't exist
+        echo json_encode(array("message" => "Product doesn't exist"));
+    }
