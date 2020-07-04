@@ -97,7 +97,7 @@
             $stmt->execute();
 
             // Get retrieved row
-            $row = $stmt->fetch(PDO:FETCH_ASSOC);
+            $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
             // Set the values to object properties
             $this->name = $row['name'];
